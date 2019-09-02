@@ -39,7 +39,7 @@ const init = async () => {
 	});
 	client.logger.log(`Loading a total of ${evtFiles.length} events.`);
 
-	client.login();
+	client.login(process.env.BOT_TOKEN);
 };
 
 init();
